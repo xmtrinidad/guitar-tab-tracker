@@ -2,14 +2,20 @@
   box-sizing: border-box;
 }
 
+.app-container {
+  background-color: #fafafb;
+  max-width: 600px;
+  height: 100%;
+  margin: 42px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+}
+
 header {
-  background-color: #303F9F;
-  color: white;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   padding: 0 16px;
 }
 
@@ -20,17 +26,13 @@ header button {
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 h1 {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #fff;
 }
 
 main {
-  max-width: 1200px;
-  margin: 36px auto;
-
+  
 }

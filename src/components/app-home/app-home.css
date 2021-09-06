@@ -2,10 +2,25 @@
   box-sizing: border-box;
 }
 
+.app-home {
+  padding: 0 16px;
+}
+
 .tabs button {
   border: none;
   margin-right: 24px;
   cursor: pointer;
   background-color: transparent;
   font-size: 1rem;
+}
+
+.tabs-table-header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.tabs-table-header span {
+  font-size: 1.2rem;
+  font-weight: bold;
 }

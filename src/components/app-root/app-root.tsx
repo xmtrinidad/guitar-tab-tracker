@@ -8,7 +8,7 @@ import { Component, h } from '@stencil/core';
 export class AppRoot {
   render() {
     return (
-      <div>
+      <div class="app-container">
         <header>
           <h1>Guitar Tab Tracker</h1>
           <button>Add Tab</button>

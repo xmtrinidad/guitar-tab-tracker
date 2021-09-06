@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface SongRow {
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -24,9 +26,16 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLSongRowElement extends Components.SongRow, HTMLStencilElement {
+    }
+    var HTMLSongRowElement: {
+        prototype: HTMLSongRowElement;
+        new (): HTMLSongRowElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
+        "song-row": HTMLSongRowElement;
     }
 }
 declare namespace LocalJSX {
@@ -34,9 +43,12 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface SongRow {
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-root": AppRoot;
+        "song-row": SongRow;
     }
 }
 export { LocalJSX as JSX };
@@ -45,6 +57,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "song-row": LocalJSX.SongRow & JSXBase.HTMLAttributes<HTMLSongRowElement>;
         }
     }
 }
